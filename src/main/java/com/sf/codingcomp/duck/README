@@ -1,0 +1,5 @@
+"If it looks like a duck and quacks like a duck, then it is a duck."
+
+TODO
+Implement the "isADuck" method in DuckFinder.  The ONLY thing that qualifies any object as a duck is if it has the 
+methods "walksLikeADuck" and "quacksLikeADuck".

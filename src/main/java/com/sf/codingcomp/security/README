@@ -1,0 +1,22 @@
+Security Matrix
+
+TODO
+Implement all methods in SecurityMatrix
+Update the Role class as needed.
+Update the Action and Day enums as needed, but do not add any new values to either.
+
+ASSUMPTIONS
+The default roles are ADMIN, DEV, TEST, and READONLY.
+ADMIN role can do every action every day of the week.
+DEV role can do every action during the work week (Monday thru Friday), but can only READ on the weekend(Saturday and Sunday) because of a maintenance window.
+TEST role can READ, WRITE, and UPDATE during the work week (Monday thru Friday), but can only READ on the weekend(Saturday and Sunday) because of a maintenance window.
+READONLY role can READ ever day of the week.
+When a role is added, it is assumed to have no access by default.
+Role name is used to determine if the role already exists.
+When granting or revoking access, if no days are passed, grant or revoke access for all days.
+When finding roles, days, or actions, the resulting list should be sorted as follows:
+	roles - alphabetically by the name of the role, case-insensitive
+	days - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+	actions - Create, Read, Update, Delete
+	
+THE SECURITY MATRIX MUST MAINTAIN ITS STATE FOR THE ENTIRE TEST CASE.  THE TEST CASES BUILD UPON ONE ANOTHER.

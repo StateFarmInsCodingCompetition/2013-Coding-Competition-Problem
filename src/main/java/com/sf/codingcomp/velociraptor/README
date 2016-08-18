@@ -1,0 +1,15 @@
+Velociraptor
+
+TODO
+Implement the "catchPrey" method in Velociraptor
+
+ASSUMPTIONS
+Lead values are double-precision. Speed values are integer.
+The Velociraptor has a top speed of 40 MPH
+The Velociraptor gains 1 MPH per second while chasing the Prey up to its top speed, then loses 1 MPH per second until its speed is 0 MPH.
+The Prey starts at and maintains its top speed during the entire chase.
+If the Velociraptor's speed reaches 0 MPH before catching the Prey, the Prey escapes
+If the Prey has a top speed faster than the Velociraptor, the Prey escapes.
+"catchPrey" should return the number of seconds it takes the Velociraptor to catch the Prey as a whole number, or -1 if the Prey escapes
+
+HINT: Check the VelociraptorTest.java class for comments and easier test cases to help you get started.

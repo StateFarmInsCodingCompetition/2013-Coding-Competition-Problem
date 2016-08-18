@@ -1,0 +1,12 @@
+Arena Battle
+
+TODO
+Implement the "fight" method in Arena.  
+
+ASSUMPTIONS
+character1 is always the attacker.
+character2 is always the defender.
+The attacker gets 100% of their attack attribute and 75% of their defense.
+The defender gets 100% of their defense attribute and 75% of their attack.
+The character with the greater total always wins.
+The attacker wins in the event of a tie.

@@ -1,0 +1,14 @@
+#Tweeting
+
+TODO
+Implement all methods in Tweeter
+Implement "follow" and "unfollow" methods in User
+Update Feed, Hashtag, Tweet, and User as necessary
+
+ASSUMPTIONS
+Mentions are any text that begins with an @ symbol up to the next whitespace character.
+"username" is considered the unique identifier of a User
+Tweets cannot be longer than 140 characters
+Tweets go into the author's feed as well as the feeds of all followers
+
+

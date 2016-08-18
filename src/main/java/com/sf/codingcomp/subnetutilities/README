@@ -1,0 +1,16 @@
+The SubnetImpl class needs to be implemented. An IP address and a subnet mask are all that you need
+in order to calculate what IPs are in that subnet and what the special addresses are.
+
+Hint: Try to pass all "simple" tests first and then move to the advanced ones.
+The "simple" tests will assume that the IP address passed into your constructor is the broadcast (last)
+address of the subnet. The "advanced" tests may pass in any address in that subnet and still expect
+you to calculate the broadcast address.
+
+e.g.
+Simple test:
+.getBroadcastAddress(): IP 192.168.1.0 and mask int 24 are passed into your constructor. Broadcast address is 192.168.1.255.
+Advanced test:
+.getBroadcastAddress(): IP 192.168.1.1 and mask int 24 are passed into your constructor. Broadcast address is still 192.168.1.255.
+
+Assumptions:
+IPv4 only.

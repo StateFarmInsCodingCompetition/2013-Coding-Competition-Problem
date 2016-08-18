@@ -1,0 +1,18 @@
+Fantasy Football
+
+TODO
+Implement "addPlayer", "wins", and "total" methods in Team.
+Implement "calculateTotalScore" in Quarterback, RunningBack, and WideReceiver
+
+ASSUMPTIONS
+Quarterback touchdowns are worth 5 points and yards are 1 point per 25.
+RunningBack touchdowns are worth 6 points and yards are 1 point per 10.
+WideReceiver touchdowns are worth 6 points and yards are 1 point per 10.
+LeagueOptions contain configurable options for maximum players at each position and whether or not to allow partial points.
+The team that scores the most points always wins.  There will be no ties.
+
+
+PARTIAL POINTS
+When using partial points, the total needs to be rounded to 2 decimal places
+partialPointsAllowed = true means 67 yards for a RunningBack = 6.7 points
+partialPointsAllowed = false means 67 yards for a RunningBack = 6 points

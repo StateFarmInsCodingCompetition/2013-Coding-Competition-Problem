@@ -1,0 +1,56 @@
+########################### Bonus XML Handler Challenge #############################
+It is advised that you only attempt this exercise if you have completed the other exercises.
+
+Task:   		In this challenge you are to implement the IXMLHandler 
+        		interface with the XMLHandler class.  You are permitted to modify the TO 
+        		classes, such as Benefits.java, Body.java if it will help execute the JUnit 
+        		tests successfully.  (It may not be necessary).
+        		Details for the specific logic needed to implement this class are documented 
+        		inside test class (XMLHandlerTest.java).
+
+Grading:		You will be graded first on the number of tests which pass.  Any ties
+        		will be decided by the adherence of your design to good coding 
+       			standards, OO design, and long term maintainability.  
+
+Back Story: 	You have been given requirements to call off to a web service that 
+				uses XML for both input and output.  The web service team is 
+				diligently working on completing their piece of work, but will 
+				need you to plug in to the web service shortly after they are 
+				complete.  They are able to provide input XML and output XML 
+				for employee benefits display (See below).  
+
+Helpful hint:  	Google XStream from import com.thoughtworks.xstream.XStream;			
+			
+Input XML example:
+<Input>
+  <Header>
+    <Service>get_money</Service>
+  </Header>
+  <Body>
+    <OperationInput>
+      <EmployeeID>0000</EmployeeID>
+    </OperationInput>
+  </Body>
+</Input>
+
+Output XML example:
+<Output>
+	<service>get_money</service>
+	<body>
+		<benefits>
+			<employeeID>0000</employeeID>
+			<employeeInfo>
+				<name>Mickey</name>
+				<gender>M</gender>
+				<streetAddress>1 Disney Lane</streetAddress>
+				<city>Bloomington</city>
+				<state>IL</state>
+				<zip>61704</zip>
+			</employeeInfo>
+			<retirementAccounts>
+				<rothIRABalance>$10,500</rothIRABalance>
+				<pensionBalance>$5,000</pensionBalance>
+			</retirementAccounts>
+		</benefits>
+	</body>
+</Output>
