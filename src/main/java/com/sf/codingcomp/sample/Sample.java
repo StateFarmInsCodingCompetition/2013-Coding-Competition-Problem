@@ -5,7 +5,7 @@ package com.sf.codingcomp.sample;
  */
 public class Sample {
 	public boolean isBlank(String stringToTest) {
-		return false;
+		return stringToTest.replaceAll(" ", "").replaceAll("\\t").isEmpty();
 	}
 
 	public boolean isAlpha(String stringToTest) {
