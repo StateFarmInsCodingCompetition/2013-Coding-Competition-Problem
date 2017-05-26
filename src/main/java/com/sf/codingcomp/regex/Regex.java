@@ -8,8 +8,8 @@ public class Regex {
 	 * @return
 	 */
 	public static boolean isFullPhoneNumber(String phone) {
-		// TODO: Implement this method.
-		return false;
+		String pattern = "\\d\\d\\d\\D{0,1}\\d\\d\\d\\D{0,1}\\d\\d\\d\\d";
+		return phone.matches(pattern);
 	}
 
 	/**
@@ -20,14 +20,16 @@ public class Regex {
 	 * @return
 	 */
 	public static boolean isAmericanAddress(String address) {
-
-		// TODO: Implement this method.
-		return false;
+		String pattern = ".*\\d.* .* [A-Z][A-Z] \\d\\d\\d\\d\\d.*";
+		return address.matches(pattern);
 	}
 
 	public static boolean isIPv4Address(String ip) {
-
-		// TODO: Implement this method.
-		return false;
+		String pattern = "([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])."+
+						"([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])."+
+						"([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])."+
+						"([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])";
+				
+		return ip.matches(pattern);
 	}
 }
